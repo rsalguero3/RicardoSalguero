@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Ricardo Salguero</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/animations.css" />
+		<link rel="stylesheet" href="css/supporting.css">
+        <link rel="stylesheet" href="css/main.css">
+    	<link rel="stylesheet" href="css/hover-min.css" media="all">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+	
+		<div class="prev-next">
+			<a href="#" onClick="gotoPage1(0)"><i class="fa fa-home"></i></a>
+			<a href="#" onClick="loadPreviousPage()"><i class="fa fa-long-arrow-left"></i></a>
+			<a href="#" onClick="loadNextPage()"><i class="fa fa-long-arrow-right"></i></a>
+		</div>
+	
+		<div id="page-main" class="page-perspective">
+	
+			<div id="page1" class="rmt-page rmt-page-1">   <!-- First Page-->
+			
+				<div class="container">
+					<div class="row">  <!-- First Row-->
+					
+						<div class="col-md-6 box">
+							<div id="logo"></div>
+							<div id="logo2"></div>
+						</div>
+	
+	
+						<div class="col-md-3 about">
+							<section>
+								<a href="#about" onClick="gotoPage4(1)">
+									<span class="num">No.1</span>
+									<div><span class="ptitle">About Me</span></div>
+								</a>
+							</section>
+						</div>
+					</div> <!-- End first row-->
+			
+			
+					<div class="row"> <!-- Second Row-->
+						<div class="col-md-3 portfolio">  <!-- Portfolio block-->
+							<section>
+								<a href="#portfolio" onClick="gotoPage2(2)">
+									<span class="num">No.2</span>
+									<div><span class="ptitle">Portfolio</span></div>
+								</a>
+							</section>
+						</div>
+
+						<div class="col-md-3 blog">  <!-- Blog block-->
+							<section>
+								<a href="#blog" onClick="gotoPage2(3)">
+									<span class="num">No.3</span>
+									<div><span class="ptitle">Blog</span></div>
+								</a>
+							</section>
+						</div>
+                        
+                        <div class="col-md-3 contact"> <!-- Contact block-->
+							<section>
+								<a href="#contact" onClick="gotoPage3(4)">
+									<span class="num">No.4</span>
+									<div><span class="ptitle">Contact</span></div>
+								</a>
+							</section>
+						</div>
+	
+					</div>  <!-- End Second Row-->
+
+				</div>  <!-- End page 1 container-->
+			
+			
+			</div>    <!-- End page 1 -->
+			
+			
+			<div id="page2" class="rmt-page rmt-page-2">   <!-- Start Page 2 -->
+	
+				<div class="intro-head-about"></div>   <!-- Page 2 header image-->
+				<div class="page-tri"></div>           <!-- page cube thingy-->
+	
+				<div class="container about-container">  <!-- page 2 container START-->
+	
+					<div class="headline">
+						<span class="header">About Me</span>
+					</div>
+	
+	
+					<div class="row">
+	
+						<div class="col-md-4 about-image"> <!-- The left mage-->
+							<div class="image-holder one">
+								<img src="img/profile-pic.jpg" alt="profile pic"/>
+							</div>
+						</div>
+	
+						<div class="col-md-8 about-desc">  <!-- The text bit-->
+							<p> 
+								
+							</p>
+							<span class="divider-about"></span>
+							<p>
+								
+							</p>
+							<span class="divider-about"></span>
+							<p>
+								
+							</p>
+							<span class="divider-about"></span>
+						</div>
+						
+						
+
+					</div>
+	
+				</div>  <!-- End page 2 container -->
+	
+			</div>  <!-- End page 2 -->
+			
+			
+			<div id="page3" class="rmt-page rmt-page-3">  <!-- Start page 3-->
+			
+				<div class="intro-head-portfolio"></div>  <!-- Page 3 header image-->
+				<div class="page-tri"></div>       <!-- page cube thingy-->
+
+				<div class="container">       <!-- page 3 container START-->
+	
+					<div class="headline">
+						<span class="header">Projects</span>
+					</div>
+       
+					<div class="row">
+	 
+						<div id="filter">         <!-- Portfolio filters-->
+							<ul id="filters">
+								<li><a href="#" data-filter="*">show all</a></li>
+								<li><a href="#" data-filter=".web">web</a></li>
+								<li><a href="#" data-filter=".graphics">mobile app</a></li>
+								<li><a href="#" data-filter=".copy">programming</a></li>
+							</ul>
+						</div>
+						
+					</div>
+	   
+	   
+					<div class="row">
+	    
+						<div id="work">          <!-- Portfolio items container-->
+		
+							<div class="col-md-3 item web">
+								<section>
+									<a href="#" id="item1-open">
+										<img src="img/caratsystems.png" height="250" alt="carat systems website"/>
+										<div><span>Carat Systems</span></div>
+									</a>
+								</section>
+							</div>
+		
+							<div class="col-md-3 item graphics">
+								<section>
+									<a href="#" id="item2-open">
+										<img  height="250" />
+										<div><span>Mystery Shop Tools</span></div>
+									</a>
+								</section>
+							</div>
+		
+							<div class="col-md-3 item copy">
+								<section>
+									<a href="#" id="item3-open">
+										<img height="250" />
+										<div><span>Robotics</span></div>
+									</a>
+								</section>
+							</div>
+                            
+						</div>   <!-- End portfolio items container-->
+		
+
+					</div>
+		
+				</div>         <!-- End page 3 container-->
+	  
+			</div>             <!-- End page 3-->
+	
+			<!-- Portfolio Item Details-->
+	
+			<div class="item1 open-item1">   <!-- portfolio item 1 detail view-->
+				<button type="button" class="item-close">Close</button>
+		
+				<div class="work-container">
+					<div class="container">
+					
+						<div class="row">
+						
+							<div class="col-md-6 item-image"> 
+								<img src="img/caratsystems.png" alt="carat systems"/>
+							</div>
+
+							<div class="col-md-6 item-text">  
+								<span class="portfolio-item-title">Carat Systems</span>
+								
+							</div>
+						</div>
+		
+					</div>
+				</div>
+				
+			</div>   <!-- END item 1 detail view-->
+		
+			<div class="item2 open-item2"> <!-- portfolio Item 2 details-->
+				<button type="button" class="item-close2">Close</button>
+		
+				<div class="work-container">
+					<div class="container">
+		
+						<div class="row">
+							
+							<div class="col-md-6 item-image"> 
+								<img />
+							</div>
+
+							<div class="col-md-6 item-text">  
+								<span class="portfolio-item-title">Mystery Shop Tools</span>
+								
+							</div>
+								
+						</div>
+		
+					</div>
+						
+				</div>
+			</div>
+			
+		
+			<div class="item3 open-item3"> <!-- Item 3 details-->
+				<button type="button" class="item-close3">Close</button>
+		
+				<div class="work-container">
+					<div class="container">
+		
+						<div class="row">
+							<div class="col-md-6 item-image"> 
+								<img />
+							</div>
+		
+							<div class="col-md-6 item-text">  
+								<span class="portfolio-item-title">Robotics</span>
+								
+							</div>
+						</div>
+		
+					</div>
+				</div>
+			</div>
+	<!-- !End Portfolio Item Details-->
+
+			<div id="page5" class="rmt-page rmt-page-5">  <!-- Start page 5-->
+				<div class="intro-head-blog"></div>
+				<div class="page-tri"></div>
+		
+				<div class="blog-container">
+					<div class="container">
+		
+						<div class="headline">
+							<span class="header">Blog</span>
+						</div>
+						<div class="row">
+						</div>
+					</div>
+				</div>
+			</div>   <!-- End page 5-->
+		
+		
+			<div id="page6" class="rmt-page rmt-page-6"> <!-- Start page 6-->
+				<div class="intro-head-contact"></div>
+				<div class="page-tri"></div>
+		
+				<div class="container contact-container">
+		
+					<div class="headline">
+						<span class="header">Get in Touch</span>
+					</div>
+		
+					<div class="row c-contain">
+						<div class="col-md-6 contact-left">
+		
+							<span class="contact-left-lead">Email </span>
+							<span class="email hvr-underline-from-left"><a href="mailto:rsalguero3@yahoo.com">rsalguero3@yahoo.com</a></span>
+							
+                            <span class="contact-left-lead">GitHub</span>
+                            <span class="email hvr-underline-from-left"><a href="http://www.github.com/rsalguero3">www.github.com/rsalguero3</a></span>
+                            
+                            <span class="contact-left-lead">Linkedin</span>
+                            <span class="email hvr-underline-from-left"><a href="https://www.linkedin.com/in/rsalguero3">www.linkedin.com/in/rsalguero3</a></span>
+		
+							<div class="contact-bottom">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div id="map"></div>
+		
+			</div> <!-- End page 6-->
+		</div> <!-- END all pages container-->
+
+
+		<nav id="main-menu" class="main-menu">
+			<a href="#" class="main-menu-trigger"><span>Menu</span></a>
+			<ul class="left-menu">
+				<li><a href="#">HOME</a></li>
+			</ul>
+				
+			<ul class="bottom-menu">
+				<li><a href="http://www.github.com/rsalguero3"><i class="fa fa-github"></i></a></li>
+				<li><a href="http://www.linkedin.com/in/rsalguero3"><i class="fa fa-linkedin"></i></a></li>
+			</ul>	
+		</nav>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/jquery.nicescroll.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script src="js/gmaps.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/raphael-min.js"></script>
+		<script src="js/jquery.isotope.min.js"></script>
+		<script src="js/TweenMax.js"></script>
+		<script src="js/jquery.gsap.js"></script>
+		<script src="js/supporting.js"></script>
+		<script src="js/main.js"></script>
+	
+		<script>
+	    $(document).ready(function(){
+
+		//set nicescroll everywhere initially
+		$("#page1, #page2, #page3, #page4, #page5, #page6").niceScroll({
+			cursoropacitymin : 0,
+			cursorcolor: '#222',
+			cursorwidth: '10px',
+			cursorborderradius: '1px',
+			cursoropacitymax: 0,
+			cursorborder: 'none',
+		});
+		
+
+        var map = new GMaps({
+        el: '#map',
+        lat: 42.361835,
+        lng: -71.057922
+        });
+
+		
+		
+		$('.chart').easyPieChart({
+		animate: 5000,
+		barColor: '#6b1816',
+		trackColor: false,
+		scaleColor: false,
+		lineWidth: '20',
+		lineCap: 'butt',
+		size: '125'
+        });
+		
+        
+		
+
+	    /**	
+		//Logo Draw Enable this to draw the svg logo
+		
+        $('#logo2').lazylinepainter( 
+        {
+        "svgData": pathObj,
+        "strokeWidth": 2,
+        "strokeColor": "#ffffff"
+        }).lazylinepainter('paint'); 
+	
+		**/
+		
+		/**
+		//video BG Enable this to enable video background on homepage
+        var isTouch = Modernizr.touch;
+		if(!isTouch){
+        jQuery('#page1').videoBG({
+		mp4:'',
+		ogv:'',
+		webm:'',
+		poster:'',
+		zIndex:0,
+		fullscreen: true
+	    });
+		
+		**/
+		
+        });		
+		</script>	
+    </body>
+</html>

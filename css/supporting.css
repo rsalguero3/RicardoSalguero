@@ -1,0 +1,267 @@
+/*Supporting CSS for portfolio and overlays*/
+#work {
+width: 100%;
+position: relative;
+margin: 20px auto;
+padding: 0;
+}
+#work section {
+background: #fff;
+padding: 0px;
+position: relative;
+box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+height: 230px;
+width: 100%;
+}
+
+
+#work .services section, #work .contact section  {
+background: #000;
+}
+
+
+#work .services section a, #work .contact section a {
+overflow: hidden;
+color: rgba(255,255,255,0.9);
+}
+
+
+#work section a,
+#work section a img {
+display: block;
+position: relative;
+height: 230px;
+}
+
+#work section a i, #work section a span[class^="icon-"] {
+display: block;
+position: relative;
+font-size: 90px;
+line-height: 230px;
+transition: all 100ms ease-in 100ms;
+}
+
+#work section a {
+overflow: hidden;
+color: rgba(10,10,10,0.9);
+}
+
+#work section a div {
+position: absolute;
+background: rgba(0, 2, 15, 0.3);
+width: 100%;
+height: 100%;
+}
+
+
+
+#work .services section a div {
+background: rgba(255,255,255,0.9);
+}
+
+#work .services section a div span {
+color: rgba(10,10,10,0.5);
+border-bottom: 5px solid rgba(10,10,10,0.5);
+}
+
+
+#work .services section a:hover span[class^="icon-"]{
+transition: all 100ms ease-in 200ms;
+opacity: 0.2;
+}
+
+#work .contact section a div {
+background: rgba(0, 2, 15, 0.5);
+}
+
+#work .contact section a div span {
+color: rgba(255,255,255,0.9);
+border-bottom: 5px solid rgba(255,255,255,0.5);
+}
+
+#work .contact section a:hover span[class^="icon-"]{
+transition: all 100ms ease-in 200ms;
+opacity: 0.2;
+}
+
+
+
+#work section a div.custom-hover-object {
+position: absolute;
+background: #333;
+background: rgba(255,255,255,0.1);
+width: 100%;
+height: 100%;
+}
+
+#work section a div span {
+display: inline-block;
+text-transform: uppercase;
+font-weight: normal;
+color: rgba(255,255,255,0.9);
+border-bottom: 5px solid rgba(255,255,255,0.5);
+margin-top: 100px;
+}
+
+
+
+#work section a div.custom-hover-object span {
+color: rgba(75,75,75,0.9);
+text-shadow: 1px 1px 1px rgba(255,255,255,0.2);
+border-bottom: 1px solid rgba(0,0,0,0.5);
+box-shadow: 0 1px 0 rgba(255,255,255,255.1), 0 -10px 0 rgba(0,0,0,0.3);
+}
+
+#work section a:hover {
+text-decoration: none;
+}
+
+
+#work section a:hover span[class^="icon-"]{
+transition: all 100ms ease-in 200ms;
+opacity: 0;
+}
+
+
+#work .item img {
+transition: all 0.2s ease-in 0.1s;
+}
+
+
+#work .item:hover img {
+-webkit-transform: scale(1.2);
+transform: scale(1.2);
+}
+
+
+
+/*Portfolio Overlays*/
+
+/* Overlay closing cross */
+.item1 .item-close, 
+.item2 .item-close2,
+.item3 .item-close3,
+.item4 .item-close4,
+.item5 .item-close5,
+.item6 .item-close6,
+.item7 .item-close7,
+.item8 .item-close8 {
+width: 80px;
+height: 80px;
+position: absolute;
+right: 20px;
+top: 20px;
+overflow: hidden;
+border: none;
+background: url(../img/cross.png) no-repeat center center;
+text-indent: 200%;
+color: transparent;
+outline: none;
+z-index: 4;
+}
+
+
+/* Overlay style */
+.item1, 
+.item2, 
+.item3, 
+.item4, 
+.item5, 
+.item6, 
+.item7, 
+.item8 {
+position: fixed;
+width: 100%;
+height: 100%;
+overflow: auto;
+top: 0;
+left: 0;
+z-index: 2;
+display: table;
+}
+
+.item1 {
+background: rgba(248,121,121,0.97);
+}
+
+.item2 {
+background: rgba(122,101,175,0.97);
+}
+
+.item3 {
+background: rgba(29,187,144,0.97);
+}
+
+.item4 {
+background: rgba(248,193,55,0.97);
+}
+
+.item5 {
+background: rgba(248,193,55,0.97);
+}
+
+.item6 {
+background: rgba(29,187,144,0.97);
+}
+
+.item7 {
+background: rgba(248,121,121,0.97);
+}
+
+.item8 {
+background: rgba(122,101,175,0.97);
+}
+
+.work-container {
+display: table-cell;
+vertical-align: middle;
+opacity: 0;
+}
+
+
+
+
+/* Effects */
+.open-item1, 
+.open-item2, 
+.open-item3, 
+.open-item4 , 
+.open-item5, 
+.open-item6, 
+.open-item7, 
+.open-item8{
+visibility: hidden;
+opacity: 0;
+-webkit-transform: scale(0.9);
+transform: scale(0.9);
+-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.open-item1.open,
+.open-item2.open,
+.open-item3.open,
+.open-item4.open, 
+.open-item5.open, 
+.open-item6.open, 
+.open-item7.open, 
+.open-item8.open{
+visibility: visible;
+opacity: 1;
+-webkit-transform: scale(1);
+transform: scale(1);	
+-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+transition: transform 0.4s, opacity 0.4s;
+}
+
+
+.open-item1.open .work-container,
+.open-item2.open .work-container,
+.open-item3.open .work-container,
+.open-item4.open .work-container,
+.open-item5.open .work-container,
+.open-item6.open .work-container,
+.open-item7.open .work-container,
+.open-item8.open .work-container{
+opacity: 1;
+}
